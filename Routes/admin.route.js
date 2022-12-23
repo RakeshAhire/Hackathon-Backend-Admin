@@ -3,7 +3,7 @@ const { AdminModel } = require("../Model/admin.model");
 
 const adminRouter = Router();
 
-adminRouter.get("/", async (req, res) => {
+adminRouter.post("/", async (req, res) => {
     const {type} = req.body;
     try {
         if (type === 'lecture') {
